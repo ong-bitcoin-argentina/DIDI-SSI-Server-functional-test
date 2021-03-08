@@ -31,3 +31,12 @@ Feature: User Routes
     Examples:
       | request                                                                                                                                                                     |
       | {"eMail":"gaston.genaud@didi.org.ar","password": "123456aaAA", "firebaseId":"20"} |
+
+  Scenario Outline: user login
+    Given A account <request>
+    When I send POST request to /userLogin
+    Then I get response code 200
+
+    Examples:
+      | request                                                                                                                                                                     |
+      | {"did": "2103", "eMail":"gaston.genaud@didi.org.ar","password": "123456aaAA", "firebaseId":"20"} |
