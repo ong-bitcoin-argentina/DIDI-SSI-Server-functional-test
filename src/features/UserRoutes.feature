@@ -40,3 +40,12 @@ Feature: User Routes
     Examples:
       | request                                                                                                                                                                     |
       | {"did": "2103", "eMail":"gaston.genaud@didi.org.ar","password": "123456aaAA", "firebaseId":"20"} |
+
+  Scenario Outline: recover password
+    Given A account <request>
+    When I send POST request to /recoverPassword
+    Then I get response code 200
+
+    Examples:
+      | request                                                                                                                                                                     |
+      | {"eMail":"gaston.genaud@didi.org.ar","eMailValidationCode": "123456aaAA", "newPass":"212312Aa0"} |
