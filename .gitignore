@@ -34,3 +34,4 @@ out
 
 node_modules
 coverage
+cucumber.json
