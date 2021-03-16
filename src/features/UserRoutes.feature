@@ -11,7 +11,7 @@ Feature: User Routes
 
     Examples:
       | request                                                                                                                                                                     |
-      | {"eMail":"gaston.genaud@didi.org.ar","name":"Gaston","lastname":"Genaud","password":"123456AAA", "phoneNumber": "3513261149", "did":"20","privateKeySeed", "firebaseId":"20"} |
+      | {"eMail":"gaston.genaud@didi.org.ar","name":"Gaston","lastname":"Genaud","password":"123456AAA", "phoneNumber": "+5493513261149", "did":"did:ethr:0xd56d90753777b4ab2013ad06ed3ae775f1832cbc","privateKeySeed": "604ef38219af8b00150ccd95", "firebaseId":"604ef38219af8b00150ccd95"} |
 
   Scenario Outline: renew a user the firebase token
     Given A token <request>
@@ -20,7 +20,7 @@ Feature: User Routes
 
     Examples:
       | request                                                                                                                                                                     |
-      | {"token": "tokentest-matisolicitardata"|
+      | {"token": "sd"}|
 
 
   Scenario Outline: recover a user password

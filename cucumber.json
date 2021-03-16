@@ -1,0 +1,289 @@
+[
+  {
+    "description": "  In order manage directory\n  As a developer\n  I want to make sure CRUD operations through REST API works fine",
+    "keyword": "Feature",
+    "name": "User Routes",
+    "line": 2,
+    "id": "user-routes",
+    "tags": [
+      {
+        "name": "@didi-server",
+        "line": 1
+      }
+    ],
+    "uri": "src/features/UserRoutes.feature",
+    "elements": [
+      {
+        "id": "user-routes;create-a-user",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "create a user",
+        "tags": [
+          {
+            "name": "@didi-server",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "A account {\"eMail\":\"gaston.genaud@didi.org.ar\",\"name\":\"Gaston\",\"lastname\":\"Genaud\",\"password\":\"123456AAA\", \"phoneNumber\": \"+5493513261149\", \"did\":\"did:ethr:0xd56d90753777b4ab2013ad06ed3ae775f1832cbc\",\"privateKeySeed\": \"604ef38219af8b00150ccd95\", \"firebaseId\":\"604ef38219af8b00150ccd95\"}",
+            "match": {
+              "location": "src/steps/UserRoutes.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I send POST request to /registerUser",
+            "match": {
+              "location": "src/steps/UserRoutes.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 758000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I get response code 200",
+            "match": {
+              "location": "src/steps/UserRoutes.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-routes;renew-a-user-the-firebase-token",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "renew a user the firebase token",
+        "tags": [
+          {
+            "name": "@didi-server",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "A token {\"token\": \"sd\"}",
+            "match": {
+              "location": "src/steps/UserRoutes.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "I send POST request to /renewFirebaseToken",
+            "match": {
+              "location": "src/steps/UserRoutes.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 736000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "I get response code 400",
+            "match": {
+              "location": "src/steps/UserRoutes.js:17"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 11000000,
+              "error_message": "AssertionError [ERR_ASSERTION]: Input A expected to strictly equal input B:\n\u001b[32m+ expected\u001b[39m \u001b[31m- actual\u001b[39m\n\n\u001b[31m-\u001b[39m 200\n\u001b[32m+\u001b[39m 400\n    + expected - actual\n\n    -200\n    +400\n\n    at CustomWorld.<anonymous> (/home/gastongenaud/Escritorio/DIDI/AutomationsLibrarys/server/DIDI-SSI-Server-functional-test/src/steps/UserRoutes.js:18:12)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-routes;recover-a-user-password",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "recover a user password",
+        "tags": [
+          {
+            "name": "@didi-server",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 27,
+            "name": "A account {\"eMail\":\"gaston.genaud@didi.org.ar\",\"password\": \"123456aaAA\", \"firebaseId\":\"20\"}",
+            "match": {
+              "location": "src/steps/UserRoutes.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "I send POST request to /recoverAccount",
+            "match": {
+              "location": "src/steps/UserRoutes.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 817000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "I get response code 200",
+            "match": {
+              "location": "src/steps/UserRoutes.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-routes;user-login",
+        "keyword": "Scenario",
+        "line": 42,
+        "name": "user login",
+        "tags": [
+          {
+            "name": "@didi-server",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "A account {\"did\": \"2103\", \"eMail\":\"gaston.genaud@didi.org.ar\",\"password\": \"123456aaAA\", \"firebaseId\":\"20\"}",
+            "match": {
+              "location": "src/steps/UserRoutes.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "I send POST request to /userLogin",
+            "match": {
+              "location": "src/steps/UserRoutes.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 614000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "I get response code 200",
+            "match": {
+              "location": "src/steps/UserRoutes.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-routes;recover-password",
+        "keyword": "Scenario",
+        "line": 51,
+        "name": "recover password",
+        "tags": [
+          {
+            "name": "@didi-server",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 45,
+            "name": "A account {\"eMail\":\"gaston.genaud@didi.org.ar\",\"eMailValidationCode\": \"123456aaAA\", \"newPass\":\"212312Aa0\"}",
+            "match": {
+              "location": "src/steps/UserRoutes.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 46,
+            "name": "I send POST request to /recoverPassword",
+            "match": {
+              "location": "src/steps/UserRoutes.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 535000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 47,
+            "name": "I get response code 200",
+            "match": {
+              "location": "src/steps/UserRoutes.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

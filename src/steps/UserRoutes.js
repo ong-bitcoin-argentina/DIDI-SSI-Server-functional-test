@@ -6,6 +6,10 @@ Given('A account {}', function (request) {
     this.context['request'] = JSON.parse(request);
 });
 
+Given('A token {}', function (request) {
+    this.context['request'] = JSON.parse(request);
+});
+
 When('I send POST request to {}', async function (path) {
     this.context['response'] = await restHelper.postData(`${process.env.SERVICE_URL}${path}`, this.context['request']);
 })
