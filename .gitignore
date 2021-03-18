@@ -1,5 +1,5 @@
 .gradle
-/test/report
+
 /build/
 */bin/
 !gradle/wrapper/gradle-wrapper.jar
@@ -34,4 +34,10 @@ out
 
 node_modules
 coverage
+
+#REPORTS
 cucumber.json
+/test/report
+
+#ENVIROMENT
+variables
