@@ -1,7 +1,7 @@
 @didi-server
 Feature: User Routes
   In order manage directory
-  As a developer
+  As a QA Automation
   I want to make sure CRUD operations through REST API works fine
 
   Scenario Outline: create a user
