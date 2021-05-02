@@ -33,6 +33,10 @@ When('I send GET request to {}', async function (path) {
     this.context['response'] = await restHelper.getData(`${process.env.SERVICE_URL}${path}`);
 });
 
+When('I send GET request to {} {string}', async function (path, id) {
+    this.context['response'] = await restHelper.getData(`${process.env.SERVICE_URL}${path+id}`);
+});
+
 Then('I get response code {int}', async function (code) {
     assert.equal(this.context['response'].status, code);
 });
