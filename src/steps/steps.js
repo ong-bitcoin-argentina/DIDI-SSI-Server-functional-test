@@ -29,6 +29,10 @@ When('I send DELETE request to {} {}', async function (path,param) {
     this.context['response'] = await restHelper.postData(`${process.env.SERVICE_URL}${path + param}`);
 });
 
+When('I send DELETE request to route {string}', async function (path) {
+    this.context['response'] = await restHelper.postData(`${process.env.SERVICE_URL}${path}`);
+});
+
 When('I send GET request to {}', async function (path) {
     this.context['response'] = await restHelper.getData(`${process.env.SERVICE_URL}${path}`);
 });

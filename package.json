@@ -1,6 +1,6 @@
 {
   "name": "DIDI-SSI-Server-functional-test",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Automation Library for DIDI SSI SERVER AT Bitcoin Argentina",
   "main": "index.js",
   "scripts": {
