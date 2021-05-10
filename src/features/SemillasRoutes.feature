@@ -48,7 +48,7 @@ Feature: Semillas Routes
 
  Scenario Outline: Remove an identity validation request from Semillas
     Given A account
-    When I send DELETE request to /semillas/identityValidation <did>
+    When I send DELETE request to /semillas/identityValidation/: <did>
     Then I get response code 200
 
     Examples:
