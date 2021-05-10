@@ -10,7 +10,7 @@ Feature: Admin Routes
     Then I get response code 200
 
     Examples:
-      | request                                                                             |
+      | request                 |
       | { "phone": "40762726" } |
 
 
@@ -20,5 +20,5 @@ Feature: Admin Routes
     Then I get response code 200
 
     Examples:
-      | did                                                    |
+      |                           did                          |
       |  did:ethr:0xd56d90753777b4ab2013ad06ed3ae775f1832cbc   |
