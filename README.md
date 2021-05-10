@@ -15,4 +15,10 @@ https://reqres.in/
 ##### html report formatting 
 https://www.npmjs.com/package/cucumber-html-reporter
 
+
+#### Integrar librería en proyecto principal
+
+La libreria se tiene que integrar dentro del proyecto DIDI-SERVER
+
+La misma se implementa dentro de las devDependeencies
 ## DOC IN PROGRESS for more information => slack Gaston Genaud
