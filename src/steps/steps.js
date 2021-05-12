@@ -44,3 +44,9 @@ When('I send GET request to {} {string}', async function (path, id) {
 Then('I get response code {int}', async function (code) {
     assert.equal(this.context['response'].status, code);
 });
+Then('I get response code {int} and body {}', async function (code, body) {
+    assert.equal(this.context['response'].status, code);
+    console.log(this.context['response']);
+    assert.equal(this.context['response'].data['status'], body);
+
+});
