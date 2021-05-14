@@ -44,6 +44,7 @@ When('I send DELETE request to route {string}', async function (path) {
 
 When('I send GET request to {}', async function (path) {
     this.context['response'] = await restHelper.getData(`${process.env.SERVICE_URL}${path}`);
+    console.log(this.context['response']);
 });
 
 When('I send GET request to {} {string}', async function (path, id) {
@@ -55,7 +56,6 @@ Then('I get response code {int}', async function (code) {
 });
 Then('I get response code {int} and body {}', async function (code, body) {
     assert.equal(this.context['response'].status, code);
-    console.log(this.context['response']);
     assert.equal(this.context['response'].data['status'], body);
 
 });

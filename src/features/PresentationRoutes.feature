@@ -10,8 +10,8 @@ Feature: Presentation Routes
     Then I get response code 200
 
     Examples:
-      | id        |
-      | 321321312 |
+      | id      |
+      |321321312|
 
   Scenario Outline: Save a presentation
     Given A token <request>

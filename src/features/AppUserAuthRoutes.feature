@@ -4,6 +4,15 @@ Feature: AppUserAuth Routes
   As a QA Automation
   I want to make sure CRUD operations through REST API works fine
 
+  Scenario Outline: Authorize an application to sync with DIDI - ERROR MESSAGE : 
+    Given A token <request>
+    When I send POST request to /appAuth
+    Then I get response code 200
+
+    Examples:
+      | request                                                                             |
+      | { "did": "did:ethr:0xd56d90753777b4ab2013ad06ed3ae775f1832cbc", "name": "Gaston" } |
+
   Scenario Outline: Authorize an application to sync with DIDI
     Given A did and random name request
     When I send POST request to /appAuth
@@ -34,5 +43,5 @@ Feature: AppUserAuth Routes
     Then I get response code 200
 
     Examples:
-      | did                                                    |
-      |  did:ethr:0xd56d90753777b4ab2013ad06ed3ae775f1832cbc   |
+      |did                                                |
+      |did:ethr:0xd56d90753777b4ab2013ad06ed3ae775f1832cbc|

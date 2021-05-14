@@ -2,7 +2,12 @@ const axios = require('axios');
 
 const getData = (url) => {
     try {
-        return axios.get(url);
+        return axios.get(url, { headers: {
+            'User-Agent':
+              "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36",
+            'Connection': 'keep-alive',
+            'Accept-Encoding': 'gzip, deflate, br'
+          } });
     } catch (e) {
         console.error('exception occurred while GET', e);
         throw e;

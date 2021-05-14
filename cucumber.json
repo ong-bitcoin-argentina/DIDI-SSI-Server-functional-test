@@ -36,7 +36,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -45,11 +45,11 @@
             "line": 9,
             "name": "I send POST request to /admin/user/phone",
             "match": {
-              "location": "src\\steps\\steps.js:16"
+              "location": "src\\steps\\steps.js:25"
             },
             "result": {
               "status": "failed",
-              "duration": 690000000,
+              "duration": 650000000,
               "error_message": "Error: Request failed with status code 400\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:244:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
@@ -59,7 +59,7 @@
             "line": 10,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "skipped"
@@ -99,11 +99,11 @@
             "line": 19,
             "name": "I send GET request to /admin/user/did/: did:ethr:0xd56d90753777b4ab2013ad06ed3ae775f1832cbc",
             "match": {
-              "location": "src\\steps\\steps.js:36"
+              "location": "src\\steps\\steps.js:45"
             },
             "result": {
               "status": "failed",
-              "duration": 671000000,
+              "duration": 697000000,
               "error_message": "Error: Request failed with status code 400\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:244:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
@@ -113,7 +113,7 @@
             "line": 20,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "skipped"
@@ -138,10 +138,10 @@
     "uri": "src\\features\\AppUserAuthRoutes.feature",
     "elements": [
       {
-        "id": "appuserauth-routes;authorize-an-application-to-sync-with-didi",
+        "id": "appuserauth-routes;authorize-an-application-to-sync-with-didi---error-message-:",
         "keyword": "Scenario",
         "line": 14,
-        "name": "Authorize an application to sync with DIDI",
+        "name": "Authorize an application to sync with DIDI - ERROR MESSAGE :",
         "tags": [
           {
             "name": "@didi-server",
@@ -169,11 +169,11 @@
             "line": 9,
             "name": "I send POST request to /appAuth",
             "match": {
-              "location": "src\\steps\\steps.js:16"
+              "location": "src\\steps\\steps.js:25"
             },
             "result": {
               "status": "failed",
-              "duration": 675000000,
+              "duration": 696000000,
               "error_message": "Error: Request failed with status code 500\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:244:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
@@ -183,7 +183,7 @@
             "line": 10,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "skipped"
@@ -194,7 +194,7 @@
       {
         "id": "appuserauth-routes;create-and-validate-the-relationship-user---authorized-app",
         "keyword": "Scenario",
-        "line": 24,
+        "line": 29,
         "name": "Create and validate the relationship user - authorized app",
         "tags": [
           {
@@ -207,7 +207,7 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 18,
+            "line": 23,
             "name": "A account {\"userJWT\": \"40762375\"}",
             "match": {
               "location": "src\\steps\\steps.js:5"
@@ -220,24 +220,24 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 19,
+            "line": 24,
             "name": "I send POST request to /userApp/validateUser",
             "match": {
-              "location": "src\\steps\\steps.js:16"
+              "location": "src\\steps\\steps.js:25"
             },
             "result": {
               "status": "failed",
-              "duration": 5017000000,
+              "duration": 5012000000,
               "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout._onTimeout (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\cucumber\\lib\\user_code_runner.js:76:18)\n    at listOnTimeout (internal/timers.js:554:17)\n    at processTimers (internal/timers.js:497:7)"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 20,
+            "line": 25,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "skipped"
@@ -248,7 +248,7 @@
       {
         "id": "appuserauth-routes;gets-a-user-according-to-his-did,-whose-relationship-[user---authorized-app]-was-established",
         "keyword": "Scenario",
-        "line": 33,
+        "line": 38,
         "name": "Gets a user according to his did, whose relationship [user - authorized app] was established",
         "tags": [
           {
@@ -261,61 +261,7 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 27,
-            "name": "A account",
-            "match": {
-              "location": "src\\steps\\steps.js:9"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 28,
-            "name": "I send GET request to /userApp/: did:ethr:0xd56d90753777b4ab2013ad06ed3ae775f1832cbc",
-            "match": {
-              "location": "src\\steps\\steps.js:36"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 614000000,
-              "error_message": "Error: Request failed with status code 500\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:244:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 29,
-            "name": "I get response code 200",
-            "match": {
-              "location": "src\\steps\\steps.js:44"
-            },
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "appuserauth-routes;you-get-an-authorized-app-based-on-your-did",
-        "keyword": "Scenario",
-        "line": 42,
-        "name": "You get an authorized app based on your did",
-        "tags": [
-          {
-            "name": "@didi-server",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 36,
+            "line": 32,
             "name": "A account",
             "match": {
               "location": "src\\steps\\steps.js:9"
@@ -328,24 +274,78 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 37,
-            "name": "I send GET request to /appAuth/: did:ethr:0xd56d90753777b4ab2013ad06ed3ae775f1832cbc",
+            "line": 33,
+            "name": "I send GET request to /userApp/: did:ethr:0xd56d90753777b4ab2013ad06ed3ae775f1832cbc",
             "match": {
-              "location": "src\\steps\\steps.js:36"
+              "location": "src\\steps\\steps.js:45"
             },
             "result": {
               "status": "failed",
-              "duration": 604000000,
+              "duration": 628000000,
               "error_message": "Error: Request failed with status code 500\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:244:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 38,
+            "line": 34,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "appuserauth-routes;you-get-an-authorized-app-based-on-your-did",
+        "keyword": "Scenario",
+        "line": 47,
+        "name": "You get an authorized app based on your did",
+        "tags": [
+          {
+            "name": "@didi-server",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 41,
+            "name": "A account",
+            "match": {
+              "location": "src\\steps\\steps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 42,
+            "name": "I send GET request to /appAuth/: did:ethr:0xd56d90753777b4ab2013ad06ed3ae775f1832cbc",
+            "match": {
+              "location": "src\\steps\\steps.js:45"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 626000000,
+              "error_message": "Error: Request failed with status code 500\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:244:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 43,
+            "name": "I get response code 200",
+            "match": {
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "skipped"
@@ -401,12 +401,11 @@
             "line": 9,
             "name": "I send POST request to /issuer/issueCertificate",
             "match": {
-              "location": "src\\steps\\steps.js:16"
+              "location": "src\\steps\\steps.js:25"
             },
             "result": {
-              "status": "failed",
-              "duration": 588000000,
-              "error_message": "Error: Request failed with status code 429\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:244:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
+              "status": "passed",
+              "duration": 601000000
             }
           },
           {
@@ -415,10 +414,11 @@
             "line": 10,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1000000
             }
           }
         ]
@@ -455,11 +455,11 @@
             "line": 18,
             "name": "I send POST request to /issuer/issueShareRequest",
             "match": {
-              "location": "src\\steps\\steps.js:16"
+              "location": "src\\steps\\steps.js:25"
             },
             "result": {
               "status": "passed",
-              "duration": 589000000
+              "duration": 608000000
             }
           },
           {
@@ -468,7 +468,7 @@
             "line": 19,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "passed",
@@ -509,12 +509,11 @@
             "line": 28,
             "name": "I send POST request to /issuer/revokeCertificate",
             "match": {
-              "location": "src\\steps\\steps.js:16"
+              "location": "src\\steps\\steps.js:25"
             },
             "result": {
-              "status": "failed",
-              "duration": 597000000,
-              "error_message": "Error: Request failed with status code 429\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:244:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
+              "status": "passed",
+              "duration": 609000000
             }
           },
           {
@@ -523,10 +522,11 @@
             "line": 29,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 0
             }
           }
         ]
@@ -563,12 +563,11 @@
             "line": 37,
             "name": "I send POST request to /issuer/verifyCertificate",
             "match": {
-              "location": "src\\steps\\steps.js:16"
+              "location": "src\\steps\\steps.js:25"
             },
             "result": {
-              "status": "failed",
-              "duration": 598000000,
-              "error_message": "Error: Request failed with status code 429\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:244:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
+              "status": "passed",
+              "duration": 601000000
             }
           },
           {
@@ -577,10 +576,11 @@
             "line": 38,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1000000
             }
           }
         ]
@@ -617,12 +617,11 @@
             "line": 46,
             "name": "I send POST request to /issuer/verify",
             "match": {
-              "location": "src\\steps\\steps.js:16"
+              "location": "src\\steps\\steps.js:25"
             },
             "result": {
-              "status": "failed",
-              "duration": 604000000,
-              "error_message": "Error: Request failed with status code 429\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:244:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
+              "status": "passed",
+              "duration": 627000000
             }
           },
           {
@@ -631,10 +630,11 @@
             "line": 47,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 0
             }
           }
         ]
@@ -671,11 +671,11 @@
             "line": 55,
             "name": "I send POST request to /issuer/verify",
             "match": {
-              "location": "src\\steps\\steps.js:16"
+              "location": "src\\steps\\steps.js:25"
             },
             "result": {
               "status": "passed",
-              "duration": 598000000
+              "duration": 622000000
             }
           },
           {
@@ -684,11 +684,11 @@
             "line": 56,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ]
@@ -725,11 +725,11 @@
             "line": 64,
             "name": "I send DELETE request to route /semillas/identityValidation",
             "match": {
-              "location": "src\\steps\\steps.js:28"
+              "location": "src\\steps\\steps.js:37"
             },
             "result": {
               "status": "failed",
-              "duration": 600000000,
+              "duration": 620000000,
               "error_message": "Error: Request failed with status code 404\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:244:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
@@ -739,7 +739,7 @@
             "line": 65,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "skipped"
@@ -795,11 +795,11 @@
             "line": 9,
             "name": "I send POST request to /sendMailValidator",
             "match": {
-              "location": "src\\steps\\steps.js:16"
+              "location": "src\\steps\\steps.js:25"
             },
             "result": {
               "status": "passed",
-              "duration": 1121000000
+              "duration": 1272000000
             }
           },
           {
@@ -808,11 +808,11 @@
             "line": 10,
             "name": "I get response code 200 and body success",
             "match": {
-              "location": "src\\steps\\steps.js:47"
+              "location": "src\\steps\\steps.js:57"
             },
             "result": {
               "status": "passed",
-              "duration": 35000000
+              "duration": 0
             }
           }
         ]
@@ -849,11 +849,11 @@
             "line": 18,
             "name": "I send POST request to /reSendMailValidator",
             "match": {
-              "location": "src\\steps\\steps.js:16"
+              "location": "src\\steps\\steps.js:25"
             },
             "result": {
               "status": "passed",
-              "duration": 950000000
+              "duration": 899000000
             }
           },
           {
@@ -862,7 +862,7 @@
             "line": 19,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "passed",
@@ -903,7 +903,7 @@
             "line": 28,
             "name": "I send POST request to /verifyMailCode",
             "match": {
-              "location": "src\\steps\\steps.js:16"
+              "location": "src\\steps\\steps.js:25"
             },
             "result": {
               "status": "passed",
@@ -916,7 +916,7 @@
             "line": 29,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "passed",
@@ -973,11 +973,11 @@
             "line": 9,
             "name": "I send GET request to /presentation/: 321321312",
             "match": {
-              "location": "src\\steps\\steps.js:36"
+              "location": "src\\steps\\steps.js:45"
             },
             "result": {
               "status": "passed",
-              "duration": 592000000
+              "duration": 637000000
             }
           },
           {
@@ -986,11 +986,11 @@
             "line": 10,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ]
@@ -1027,11 +1027,11 @@
             "line": 18,
             "name": "I send POST request to /presentation",
             "match": {
-              "location": "src\\steps\\steps.js:16"
+              "location": "src\\steps\\steps.js:25"
             },
             "result": {
               "status": "passed",
-              "duration": 600000000
+              "duration": 602000000
             }
           },
           {
@@ -1040,7 +1040,7 @@
             "line": 19,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "passed",
@@ -1088,7 +1088,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -1097,11 +1097,11 @@
             "line": 10,
             "name": "I send POST request to /renaper/validateDni",
             "match": {
-              "location": "src\\steps\\steps.js:16"
+              "location": "src\\steps\\steps.js:25"
             },
             "result": {
               "status": "passed",
-              "duration": 596000000
+              "duration": 676000000
             }
           },
           {
@@ -1110,11 +1110,11 @@
             "line": 11,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ]
@@ -1151,11 +1151,11 @@
             "line": 20,
             "name": "I send POST request to /renaper/validateDniState",
             "match": {
-              "location": "src\\steps\\steps.js:16"
+              "location": "src\\steps\\steps.js:25"
             },
             "result": {
               "status": "passed",
-              "duration": 591000000
+              "duration": 600000000
             }
           },
           {
@@ -1164,7 +1164,7 @@
             "line": 21,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "passed",
@@ -1221,11 +1221,11 @@
             "line": 14,
             "name": "I send POST request to /semillas/notifyDniDid",
             "match": {
-              "location": "src\\steps\\steps.js:16"
+              "location": "src\\steps\\steps.js:25"
             },
             "result": {
               "status": "passed",
-              "duration": 874000000
+              "duration": 864000000
             }
           },
           {
@@ -1234,7 +1234,7 @@
             "line": 15,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "passed",
@@ -1275,11 +1275,11 @@
             "line": 24,
             "name": "I send POST request to /credentialShare",
             "match": {
-              "location": "src\\steps\\steps.js:16"
+              "location": "src\\steps\\steps.js:25"
             },
             "result": {
               "status": "failed",
-              "duration": 593000000,
+              "duration": 600000000,
               "error_message": "Error: Request failed with status code 404\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:244:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
@@ -1289,7 +1289,7 @@
             "line": 25,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "skipped"
@@ -1329,11 +1329,11 @@
             "line": 33,
             "name": "I send POST request to /semillas/validateDni",
             "match": {
-              "location": "src\\steps\\steps.js:16"
+              "location": "src\\steps\\steps.js:25"
             },
             "result": {
               "status": "passed",
-              "duration": 600000000
+              "duration": 629000000
             }
           },
           {
@@ -1342,7 +1342,7 @@
             "line": 34,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "passed",
@@ -1383,11 +1383,11 @@
             "line": 42,
             "name": "I send PATCH request to /semillas/identityValidation",
             "match": {
-              "location": "src\\steps\\steps.js:24"
+              "location": "src\\steps\\steps.js:33"
             },
             "result": {
               "status": "failed",
-              "duration": 600000000,
+              "duration": 603000000,
               "error_message": "Error: Request failed with status code 404\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:244:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
@@ -1397,7 +1397,7 @@
             "line": 43,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "skipped"
@@ -1437,11 +1437,11 @@
             "line": 51,
             "name": "I send DELETE request to /semillas/identityValidation/: didexample",
             "match": {
-              "location": "src\\steps\\steps.js:28"
+              "location": "src\\steps\\steps.js:37"
             },
             "result": {
               "status": "failed",
-              "duration": 607000000,
+              "duration": 641000000,
               "error_message": "Error: Request failed with status code 404\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:244:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
@@ -1451,7 +1451,7 @@
             "line": 52,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "skipped"
@@ -1491,11 +1491,11 @@
             "line": 60,
             "name": "I send GET request to /semillas/identityValidation/: did:ethr:0xd56d90753777b4ab2013ad06ed3ae775f1832cbc",
             "match": {
-              "location": "src\\steps\\steps.js:36"
+              "location": "src\\steps\\steps.js:45"
             },
             "result": {
               "status": "failed",
-              "duration": 589000000,
+              "duration": 602000000,
               "error_message": "Error: Request failed with status code 500\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:244:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
@@ -1505,7 +1505,7 @@
             "line": 61,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "skipped"
@@ -1561,11 +1561,11 @@
             "line": 9,
             "name": "I send POST request to /shareRequest:222",
             "match": {
-              "location": "src\\steps\\steps.js:16"
+              "location": "src\\steps\\steps.js:25"
             },
             "result": {
               "status": "failed",
-              "duration": 595000000,
+              "duration": 666000000,
               "error_message": "Error: Request failed with status code 404\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:244:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
@@ -1575,7 +1575,7 @@
             "line": 10,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "skipped"
@@ -1631,11 +1631,11 @@
             "line": 9,
             "name": "I send POST request to /sendSmsValidator",
             "match": {
-              "location": "src\\steps\\steps.js:16"
+              "location": "src\\steps\\steps.js:25"
             },
             "result": {
               "status": "passed",
-              "duration": 593000000
+              "duration": 601000000
             }
           },
           {
@@ -1644,7 +1644,7 @@
             "line": 10,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "passed",
@@ -1685,11 +1685,11 @@
             "line": 18,
             "name": "I send POST request to /verifySmsCode",
             "match": {
-              "location": "src\\steps\\steps.js:16"
+              "location": "src\\steps\\steps.js:25"
             },
             "result": {
               "status": "passed",
-              "duration": 596000000
+              "duration": 600000000
             }
           },
           {
@@ -1698,7 +1698,7 @@
             "line": 19,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "passed",
@@ -1739,11 +1739,11 @@
             "line": 28,
             "name": "I send POST request to /sendMailValidator",
             "match": {
-              "location": "src\\steps\\steps.js:16"
+              "location": "src\\steps\\steps.js:25"
             },
             "result": {
               "status": "passed",
-              "duration": 1165000000
+              "duration": 1056000000
             }
           },
           {
@@ -1752,11 +1752,11 @@
             "line": 29,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ]
@@ -1793,7 +1793,7 @@
             "line": 37,
             "name": "I send POST request to /verifyMailCode",
             "match": {
-              "location": "src\\steps\\steps.js:16"
+              "location": "src\\steps\\steps.js:25"
             },
             "result": {
               "status": "passed",
@@ -1806,11 +1806,11 @@
             "line": 38,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ]
@@ -1863,11 +1863,11 @@
             "line": 9,
             "name": "I send POST request to /registerUser",
             "match": {
-              "location": "src\\steps\\steps.js:16"
+              "location": "src\\steps\\steps.js:25"
             },
             "result": {
               "status": "passed",
-              "duration": 598000000
+              "duration": 604000000
             }
           },
           {
@@ -1876,11 +1876,11 @@
             "line": 10,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ]
@@ -1917,11 +1917,11 @@
             "line": 18,
             "name": "I send POST request to /renewFirebaseToken",
             "match": {
-              "location": "src\\steps\\steps.js:16"
+              "location": "src\\steps\\steps.js:25"
             },
             "result": {
               "status": "passed",
-              "duration": 596000000
+              "duration": 597000000
             }
           },
           {
@@ -1930,11 +1930,11 @@
             "line": 19,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ]
@@ -1962,7 +1962,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -1971,11 +1971,11 @@
             "line": 28,
             "name": "I send POST request to /recoverAccount",
             "match": {
-              "location": "src\\steps\\steps.js:16"
+              "location": "src\\steps\\steps.js:25"
             },
             "result": {
               "status": "passed",
-              "duration": 661000000
+              "duration": 775000000
             }
           },
           {
@@ -1984,11 +1984,11 @@
             "line": 29,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ]
@@ -2016,7 +2016,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -2025,11 +2025,11 @@
             "line": 37,
             "name": "I send POST request to /userLogin",
             "match": {
-              "location": "src\\steps\\steps.js:16"
+              "location": "src\\steps\\steps.js:25"
             },
             "result": {
               "status": "passed",
-              "duration": 654000000
+              "duration": 673000000
             }
           },
           {
@@ -2038,7 +2038,7 @@
             "line": 38,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "passed",
@@ -2079,11 +2079,11 @@
             "line": 46,
             "name": "I send POST request to /recoverPassword",
             "match": {
-              "location": "src\\steps\\steps.js:16"
+              "location": "src\\steps\\steps.js:25"
             },
             "result": {
               "status": "passed",
-              "duration": 598000000
+              "duration": 612000000
             }
           },
           {
@@ -2092,11 +2092,11 @@
             "line": 47,
             "name": "I get response code 200",
             "match": {
-              "location": "src\\steps\\steps.js:44"
+              "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ]
