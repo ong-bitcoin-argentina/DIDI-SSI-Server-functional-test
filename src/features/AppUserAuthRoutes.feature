@@ -5,13 +5,9 @@ Feature: AppUserAuth Routes
   I want to make sure CRUD operations through REST API works fine
 
   Scenario Outline: Authorize an application to sync with DIDI
-    Given A token <request>
+    Given A did and random name request
     When I send POST request to /appAuth
-    Then I get response code 200
-
-    Examples:
-      | request                                                                             |
-      | { "did": "did:ethr:0xd56d90753777b4ab2013ad06ed3ae775f1832cbc", "name": "Gaston" } |
+    Then I get response code 200 and body success
 
 
   Scenario Outline: Create and validate the relationship user - authorized app
