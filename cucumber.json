@@ -36,7 +36,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -49,8 +49,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 650000000,
-              "error_message": "Error: Request failed with status code 400\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:244:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
+              "duration": 678000000,
+              "error_message": "Error: Request failed with status code 400\n    at createError (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
           {
@@ -103,8 +103,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 697000000,
-              "error_message": "Error: Request failed with status code 400\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:244:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
+              "duration": 673000000,
+              "error_message": "Error: Request failed with status code 400\n    at createError (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
           {
@@ -160,7 +160,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -173,8 +173,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 696000000,
-              "error_message": "Error: Request failed with status code 500\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:244:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
+              "duration": 621000000,
+              "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
           {
@@ -214,7 +214,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -227,8 +227,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 5012000000,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout._onTimeout (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\cucumber\\lib\\user_code_runner.js:76:18)\n    at listOnTimeout (internal/timers.js:554:17)\n    at processTimers (internal/timers.js:497:7)"
+              "duration": 5019000000,
+              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout._onTimeout (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\cucumber\\lib\\user_code_runner.js:76:18)\n    at listOnTimeout (internal/timers.js:554:17)\n    at processTimers (internal/timers.js:497:7)"
             }
           },
           {
@@ -268,7 +268,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -281,8 +281,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 628000000,
-              "error_message": "Error: Request failed with status code 500\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:244:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
+              "duration": 600000000,
+              "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
           {
@@ -335,8 +335,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 626000000,
-              "error_message": "Error: Request failed with status code 500\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:244:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
+              "duration": 609000000,
+              "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
           {
@@ -404,8 +404,9 @@
               "location": "src\\steps\\steps.js:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 601000000
+              "status": "failed",
+              "duration": 607000000,
+              "error_message": "Error: Request failed with status code 429\n    at createError (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
           {
@@ -417,8 +418,7 @@
               "location": "src\\steps\\steps.js:54"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "skipped"
             }
           }
         ]
@@ -459,7 +459,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 608000000
+              "duration": 607000000
             }
           },
           {
@@ -472,7 +472,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ]
@@ -512,8 +512,9 @@
               "location": "src\\steps\\steps.js:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 609000000
+              "status": "failed",
+              "duration": 606000000,
+              "error_message": "Error: Request failed with status code 429\n    at createError (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
           {
@@ -525,8 +526,7 @@
               "location": "src\\steps\\steps.js:54"
             },
             "result": {
-              "status": "passed",
-              "duration": 0
+              "status": "skipped"
             }
           }
         ]
@@ -554,7 +554,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -566,8 +566,9 @@
               "location": "src\\steps\\steps.js:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 601000000
+              "status": "failed",
+              "duration": 595000000,
+              "error_message": "Error: Request failed with status code 429\n    at createError (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
           {
@@ -579,8 +580,7 @@
               "location": "src\\steps\\steps.js:54"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "skipped"
             }
           }
         ]
@@ -620,8 +620,9 @@
               "location": "src\\steps\\steps.js:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 627000000
+              "status": "failed",
+              "duration": 600000000,
+              "error_message": "Error: Request failed with status code 429\n    at createError (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
           {
@@ -633,8 +634,7 @@
               "location": "src\\steps\\steps.js:54"
             },
             "result": {
-              "status": "passed",
-              "duration": 0
+              "status": "skipped"
             }
           }
         ]
@@ -674,8 +674,9 @@
               "location": "src\\steps\\steps.js:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 622000000
+              "status": "failed",
+              "duration": 605000000,
+              "error_message": "Error: Request failed with status code 429\n    at createError (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
           {
@@ -687,8 +688,7 @@
               "location": "src\\steps\\steps.js:54"
             },
             "result": {
-              "status": "passed",
-              "duration": 0
+              "status": "skipped"
             }
           }
         ]
@@ -729,8 +729,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 620000000,
-              "error_message": "Error: Request failed with status code 404\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:244:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
+              "duration": 603000000,
+              "error_message": "Error: Request failed with status code 404\n    at createError (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
           {
@@ -798,21 +798,21 @@
               "location": "src\\steps\\steps.js:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 1272000000
+              "status": "failed",
+              "duration": 608000000,
+              "error_message": "Error: Request failed with status code 429\n    at createError (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 10,
-            "name": "I get response code 200 and body success",
+            "name": "I get response code 200 and status success",
             "match": {
-              "location": "src\\steps\\steps.js:57"
+              "location": "src\\steps\\steps.js:58"
             },
             "result": {
-              "status": "passed",
-              "duration": 0
+              "status": "skipped"
             }
           }
         ]
@@ -853,7 +853,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 899000000
+              "duration": 1204000000
             }
           },
           {
@@ -866,7 +866,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ]
@@ -907,7 +907,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 599000000
+              "duration": 608000000
             }
           },
           {
@@ -920,7 +920,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ]
@@ -964,7 +964,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -977,7 +977,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 637000000
+              "duration": 648000000
             }
           },
           {
@@ -990,7 +990,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ]
@@ -1044,7 +1044,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ]
@@ -1088,7 +1088,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -1101,7 +1101,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 676000000
+              "duration": 613000000
             }
           },
           {
@@ -1142,7 +1142,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -1155,7 +1155,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 600000000
+              "duration": 610000000
             }
           },
           {
@@ -1168,7 +1168,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ]
@@ -1225,7 +1225,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 864000000
+              "duration": 949000000
             }
           },
           {
@@ -1238,7 +1238,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ]
@@ -1279,8 +1279,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 600000000,
-              "error_message": "Error: Request failed with status code 404\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:244:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
+              "duration": 611000000,
+              "error_message": "Error: Request failed with status code 404\n    at createError (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
           {
@@ -1333,7 +1333,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 629000000
+              "duration": 602000000
             }
           },
           {
@@ -1387,8 +1387,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 603000000,
-              "error_message": "Error: Request failed with status code 404\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:244:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
+              "duration": 618000000,
+              "error_message": "Error: Request failed with status code 404\n    at createError (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
           {
@@ -1441,8 +1441,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 641000000,
-              "error_message": "Error: Request failed with status code 404\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:244:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
+              "duration": 605000000,
+              "error_message": "Error: Request failed with status code 404\n    at createError (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
           {
@@ -1482,7 +1482,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -1495,8 +1495,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 602000000,
-              "error_message": "Error: Request failed with status code 500\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:244:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
+              "duration": 601000000,
+              "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
           {
@@ -1552,7 +1552,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -1565,8 +1565,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 666000000,
-              "error_message": "Error: Request failed with status code 404\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:244:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
+              "duration": 597000000,
+              "error_message": "Error: Request failed with status code 404\n    at createError (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
           {
@@ -1635,7 +1635,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 601000000
+              "duration": 600000000
             }
           },
           {
@@ -1676,7 +1676,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -1689,7 +1689,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 600000000
+              "duration": 599000000
             }
           },
           {
@@ -1730,7 +1730,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -1742,8 +1742,9 @@
               "location": "src\\steps\\steps.js:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 1056000000
+              "status": "failed",
+              "duration": 599000000,
+              "error_message": "Error: Request failed with status code 429\n    at createError (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
           {
@@ -1755,8 +1756,7 @@
               "location": "src\\steps\\steps.js:54"
             },
             "result": {
-              "status": "passed",
-              "duration": 0
+              "status": "skipped"
             }
           }
         ]
@@ -1797,7 +1797,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 599000000
+              "duration": 602000000
             }
           },
           {
@@ -1832,10 +1832,10 @@
     "uri": "src\\features\\UserRoutes.feature",
     "elements": [
       {
-        "id": "user-routes;create-a-user",
+        "id": "user-routes;create-a-user-errorcode:-mail_not_validated",
         "keyword": "Scenario",
-        "line": 14,
-        "name": "create a user",
+        "line": 15,
+        "name": "create a user errorCode: MAIL_NOT_VALIDATED",
         "tags": [
           {
             "name": "@didi-server",
@@ -1848,7 +1848,7 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 8,
-            "name": "A account {\"eMail\":\"gaston.genaud@didi.org.ar\",\"name\":\"Gaston\",\"lastname\":\"Genaud\",\"password\":\"123456AAA\", \"phoneNumber\": \"+5493513261149\", \"did\":\"did:ethr:0xd56d90753777b4ab2013ad06ed3ae775f1832cbc\",\"privateKeySeed\": \"604ef38219af8b00150ccd95\", \"firebaseId\":\"604ef38219af8b00150ccd95\"}",
+            "name": "A account {\"eMail\":\"gaston.genaud@didi.org.ar\",\"name\":\"Gaston\",\"lastname\":\"Genaud\",\"password\":\"Hola123.\", \"phoneNumber\": \"+5493513261149\", \"did\":\"did:ethr:0xd56d90753777b4ab2013ad06ed3ae775f1832cbc\",\"privateKeySeed\": \"604ef38219af8b00150ccd95\", \"firebaseId\":\"604ef38219af8b00150ccd95\"}",
             "match": {
               "location": "src\\steps\\steps.js:5"
             },
@@ -1867,16 +1867,96 @@
             },
             "result": {
               "status": "passed",
-              "duration": 604000000
+              "duration": 901000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 10,
-            "name": "I get response code 200",
+            "name": "I get response code 200 and status error",
             "match": {
-              "location": "src\\steps\\steps.js:54"
+              "location": "src\\steps\\steps.js:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I get errorCode \"MAIL_NOT_VALIDATED\"",
+            "match": {
+              "location": "src\\steps\\steps.js:63"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-routes;create-a-user-errorcode:-password_not_safe",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "create a user errorCode: PASSWORD_NOT_SAFE",
+        "tags": [
+          {
+            "name": "@didi-server",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "A account {\"eMail\":\"gaston.genaud@didi.org.ar\",\"name\":\"Gaston\",\"lastname\":\"Genaud\",\"password\":\"123456AAA\", \"phoneNumber\": \"+5493513261149\", \"did\":\"did:ethr:0xd56d90753777b4ab2013ad06ed3ae775f1832cbc\",\"privateKeySeed\": \"604ef38219af8b00150ccd95\", \"firebaseId\":\"604ef38219af8b00150ccd95\"}",
+            "match": {
+              "location": "src\\steps\\steps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "I send POST request to /registerUser",
+            "match": {
+              "location": "src\\steps\\steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 613000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I get response code 200 and status error",
+            "match": {
+              "location": "src\\steps\\steps.js:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "I get errorCode \"PASSWORD_NOT_SAFE\"",
+            "match": {
+              "location": "src\\steps\\steps.js:63"
             },
             "result": {
               "status": "passed",
@@ -1888,7 +1968,7 @@
       {
         "id": "user-routes;renew-a-user-the-firebase-token",
         "keyword": "Scenario",
-        "line": 23,
+        "line": 34,
         "name": "renew a user the firebase token",
         "tags": [
           {
@@ -1901,40 +1981,40 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 17,
+            "line": 28,
             "name": "A token {\"token\": \"sd\"}",
             "match": {
               "location": "src\\steps\\steps.js:12"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 18,
+            "line": 29,
             "name": "I send POST request to /renewFirebaseToken",
             "match": {
               "location": "src\\steps\\steps.js:25"
             },
             "result": {
               "status": "passed",
-              "duration": 597000000
+              "duration": 598000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 19,
+            "line": 30,
             "name": "I get response code 200",
             "match": {
               "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ]
@@ -1942,7 +2022,7 @@
       {
         "id": "user-routes;recover-a-user-password",
         "keyword": "Scenario",
-        "line": 33,
+        "line": 44,
         "name": "recover a user password",
         "tags": [
           {
@@ -1955,7 +2035,7 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 27,
+            "line": 38,
             "name": "A account {\"eMail\":\"gaston.genaud@didi.org.ar\",\"password\": \"123456aaAA\", \"firebaseId\":\"20\"}",
             "match": {
               "location": "src\\steps\\steps.js:5"
@@ -1968,20 +2048,20 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 28,
+            "line": 39,
             "name": "I send POST request to /recoverAccount",
             "match": {
               "location": "src\\steps\\steps.js:25"
             },
             "result": {
               "status": "passed",
-              "duration": 775000000
+              "duration": 669000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 29,
+            "line": 40,
             "name": "I get response code 200",
             "match": {
               "location": "src\\steps\\steps.js:54"
@@ -1996,7 +2076,7 @@
       {
         "id": "user-routes;user-login",
         "keyword": "Scenario",
-        "line": 42,
+        "line": 53,
         "name": "user login",
         "tags": [
           {
@@ -2009,7 +2089,7 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 36,
+            "line": 47,
             "name": "A account {\"did\": \"2103\", \"eMail\":\"gaston.genaud@didi.org.ar\",\"password\": \"123456aaAA\", \"firebaseId\":\"20\"}",
             "match": {
               "location": "src\\steps\\steps.js:5"
@@ -2022,27 +2102,27 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 37,
+            "line": 48,
             "name": "I send POST request to /userLogin",
             "match": {
               "location": "src\\steps\\steps.js:25"
             },
             "result": {
-              "status": "passed",
-              "duration": 673000000
+              "status": "failed",
+              "duration": 606000000,
+              "error_message": "Error: Request failed with status code 429\n    at createError (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 38,
+            "line": 49,
             "name": "I get response code 200",
             "match": {
               "location": "src\\steps\\steps.js:54"
             },
             "result": {
-              "status": "passed",
-              "duration": 0
+              "status": "skipped"
             }
           }
         ]
@@ -2050,7 +2130,7 @@
       {
         "id": "user-routes;recover-password",
         "keyword": "Scenario",
-        "line": 51,
+        "line": 62,
         "name": "recover password",
         "tags": [
           {
@@ -2063,40 +2143,40 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 45,
+            "line": 56,
             "name": "A account {\"eMail\":\"gaston.genaud@didi.org.ar\",\"eMailValidationCode\": \"123456aaAA\", \"newPass\":\"212312Aa0\"}",
             "match": {
               "location": "src\\steps\\steps.js:5"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 46,
+            "line": 57,
             "name": "I send POST request to /recoverPassword",
             "match": {
               "location": "src\\steps\\steps.js:25"
             },
             "result": {
               "status": "passed",
-              "duration": 612000000
+              "duration": 600000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 47,
+            "line": 58,
             "name": "I get response code 200",
             "match": {
               "location": "src\\steps\\steps.js:54"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ]

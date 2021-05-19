@@ -1,4 +1,4 @@
-const {Given, When, Then, AfterAll, After} = require('cucumber');
+const {Given, When, Then, AfterAll, After, And} = require('cucumber');
 const assert = require('assert').strict
 const restHelper = require('../util/restHelper');
 const {makeid} = require('../util/util');
@@ -54,8 +54,12 @@ When('I send GET request to {} {string}', async function (path, id) {
 Then('I get response code {int}', async function (code) {
     assert.equal(this.context['response'].status, code);
 });
-Then('I get response code {int} and body {}', async function (code, body) {
+
+Then('I get response code {int} and status {}', async function (code, body) {
     assert.equal(this.context['response'].status, code);
     assert.equal(this.context['response'].data['status'], body);
+});
 
+Then('I get errorCode {string}', async function (errorCode) {
+    assert.equal(this.context['response'].data['errorCode'], errorCode);
 });

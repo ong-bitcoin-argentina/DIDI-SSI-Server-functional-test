@@ -4,7 +4,7 @@
   "description": "Automation Library for DIDI SSI SERVER AT Bitcoin Argentina",
   "main": "index.js",
   "scripts": {
-    "test": "npx cucumber-js -f json:cucumber.json src/features/*.feature -r src/steps/*.js --parallel 3 && node ./report.js",
+    "test": "npx cucumber-js -f json:cucumber.json src/features/*.feature -r src/steps/*.js --parallel 2 && node ./report.js",
     "didi-server": "./node_modules/.bin/cucumber-js -f json:cucumber.json src/features/ -r src/steps/ --tags '@didi-server'",
     "report": "node ./report.js",
     "didi-server-bdd": "(yarn didi-server && yarn report) || yarn report"
@@ -12,10 +12,10 @@
   "author": "Gaston Genaud",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
+    "dotenv-flow": "^3.2.0",
     "faker": "^5.1.0",
-    "lodash": "^4.17.20",
-    "dotenv-flow": "^3.2.0"
+    "lodash": "^4.17.20"
   },
   "devDependencies": {
     "cucumber": "^6.0.5",

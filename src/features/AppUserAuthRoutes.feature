@@ -16,7 +16,7 @@ Feature: AppUserAuth Routes
   Scenario Outline: Authorize an application to sync with DIDI
     Given A did and random name request
     When I send POST request to /appAuth
-    Then I get response code 200 and body success
+    Then I get response code 200 and status success
 
 
   Scenario Outline: Create and validate the relationship user - authorized app

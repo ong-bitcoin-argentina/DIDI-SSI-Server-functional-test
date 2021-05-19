@@ -7,7 +7,7 @@ Feature: Mail Routes
   Scenario Outline: Email validation
     Given A account <request>
     When I send POST request to /sendMailValidator
-    Then I get response code 200 and body success
+    Then I get response code 200 and status success
 
     Examples:
       | request                                                                                                                                    |
