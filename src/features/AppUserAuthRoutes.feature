@@ -28,15 +28,11 @@ Feature: AppUserAuth Routes
 #      | request                 |
 #      | {"userJWT": "40762375"} |
 #
-#  Scenario Outline: Gets a user according to his did, whose relationship [user - authorized app] was established
-#    Given A account
-#    When I send GET request to /userApp/: <did>
-#    Then I get response code 500
-#
-#    Examples:
-#      | did                                                    |
-#      |  did:ethr:0xd56d90753777b4ab2013ad06ed3ae775f1832cbc   |
-#
+  Scenario Outline: Gets a user according to his did, whose relationship [user - authorized app] was established
+    Given A account
+    When I send GET request to /userApp/:did:ethr:0x184373f25dfe8596395282550853a9d5e1b11159
+    Then I get response code 200
+
   Scenario Outline: You get an authorized app based on your did
     Given A account
     When I send GET request to /appAuth/:did:ethr:0x184373f25dfe8596395282550853a9d5e1b11159
