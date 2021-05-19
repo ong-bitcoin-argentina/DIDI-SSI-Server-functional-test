@@ -2,1020 +2,6 @@
   {
     "description": "  In order manage directory\n  As a QA Automation\n  I want to make sure CRUD operations through REST API works fine",
     "keyword": "Feature",
-    "name": "Admin Routes",
-    "line": 2,
-    "id": "admin-routes",
-    "tags": [
-      {
-        "name": "@didi-server",
-        "line": 1
-      }
-    ],
-    "uri": "src\\features\\AdminRoutes.feature",
-    "elements": [
-      {
-        "id": "admin-routes;obtains-confidential-information-about-the-user-according-to-their-phone-number.",
-        "keyword": "Scenario",
-        "line": 14,
-        "name": "Obtains confidential information about the user according to their phone number.",
-        "tags": [
-          {
-            "name": "@didi-server",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 8,
-            "name": "A account { \"phone\": \"40762726\" }",
-            "match": {
-              "location": "src\\steps\\steps.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 9,
-            "name": "I send POST request to /admin/user/phone",
-            "match": {
-              "location": "src\\steps\\steps.js:25"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 706000000,
-              "error_message": "Error: Request failed with status code 400\n    at createError (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "I get response code 200",
-            "match": {
-              "location": "src\\steps\\steps.js:54"
-            },
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "admin-routes;get-confidential-information-about-the-user-according-to-his-did.",
-        "keyword": "Scenario",
-        "line": 24,
-        "name": "Get confidential information about the user according to his did.",
-        "tags": [
-          {
-            "name": "@didi-server",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 18,
-            "name": "A account",
-            "match": {
-              "location": "src\\steps\\steps.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 19,
-            "name": "I send GET request to /admin/user/did/: did:ethr:0xd56d90753777b4ab2013ad06ed3ae775f1832cbc",
-            "match": {
-              "location": "src\\steps\\steps.js:45"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 702000000,
-              "error_message": "Error: Request failed with status code 400\n    at createError (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 20,
-            "name": "I get response code 200",
-            "match": {
-              "location": "src\\steps\\steps.js:54"
-            },
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "description": "  In order manage directory\n  As a QA Automation\n  I want to make sure CRUD operations through REST API works fine",
-    "keyword": "Feature",
-    "name": "AppUserAuth Routes",
-    "line": 2,
-    "id": "appuserauth-routes",
-    "tags": [
-      {
-        "name": "@didi-server",
-        "line": 1
-      }
-    ],
-    "uri": "src\\features\\AppUserAuthRoutes.feature",
-    "elements": [
-      {
-        "id": "appuserauth-routes;create-and-validate-the-relationship-user---authorized-app",
-        "keyword": "Scenario",
-        "line": 26,
-        "name": "Create and validate the relationship user - authorized app",
-        "tags": [
-          {
-            "name": "@didi-server",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 20,
-            "name": "A account {\"userJWT\": \"6089adad4b01290015469562\"}",
-            "match": {
-              "location": "src\\steps\\steps.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 21,
-            "name": "I send POST request to /userApp/validateUser",
-            "match": {
-              "location": "src\\steps\\steps.js:25"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 5016000000,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout._onTimeout (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\cucumber\\lib\\user_code_runner.js:76:18)\n    at listOnTimeout (internal/timers.js:554:17)\n    at processTimers (internal/timers.js:497:7)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 22,
-            "name": "I get response code 200",
-            "match": {
-              "location": "src\\steps\\steps.js:54"
-            },
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "description": "  In order manage directory\n  As a QA Automation\n  I want to make sure CRUD operations through REST API works fine",
-    "keyword": "Feature",
-    "name": "Issuer Routes",
-    "line": 2,
-    "id": "issuer-routes",
-    "tags": [
-      {
-        "name": "@didi-server",
-        "line": 1
-      }
-    ],
-    "uri": "src\\features\\IssuerRoutes.feature",
-    "elements": [
-      {
-        "id": "issuer-routes;validate-the-certificate-generated-by-the-issuer-and-send-it-to-mouro-to-be-saved.",
-        "keyword": "Scenario",
-        "line": 14,
-        "name": "Validate the certificate generated by the issuer and send it to mouro to be saved.",
-        "tags": [
-          {
-            "name": "@didi-server",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 8,
-            "name": "A account {\"jwt\":\"gaston.genaud@didi.org.ar\",\"sendPush\":true }",
-            "match": {
-              "location": "src\\steps\\steps.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 9,
-            "name": "I send POST request to /issuer/issueCertificate",
-            "match": {
-              "location": "src\\steps\\steps.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 615000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "I get response code 200",
-            "match": {
-              "location": "src\\steps\\steps.js:54"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "issuer-routes;generate-a-sharerequest-and-send-it-via-mouro-for-the-user-to-send-the-information",
-        "keyword": "Scenario",
-        "line": 23,
-        "name": "Generate a shareRequest and send it via mouro for the user to send the information",
-        "tags": [
-          {
-            "name": "@didi-server",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 17,
-            "name": "A token {\"did\": \"sd\", \"jwt\": \"test\"}",
-            "match": {
-              "location": "src\\steps\\steps.js:13"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 18,
-            "name": "I send POST request to /issuer/issueShareRequest",
-            "match": {
-              "location": "src\\steps\\steps.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 607000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 19,
-            "name": "I get response code 200",
-            "match": {
-              "location": "src\\steps\\steps.js:54"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "issuer-routes;allows-you-to-revoke-a-certificate-previously-stored-in-mouro.",
-        "keyword": "Scenario",
-        "line": 33,
-        "name": "Allows you to revoke a certificate previously stored in mouro.",
-        "tags": [
-          {
-            "name": "@didi-server",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 27,
-            "name": "A account {\"did\": \"gaston.genaud@didi.org.ar\", \"sub\": \"123456aaAA\", \"jwt\":\"20\", \"hash\":\"20\"}",
-            "match": {
-              "location": "src\\steps\\steps.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 28,
-            "name": "I send POST request to /issuer/revokeCertificate",
-            "match": {
-              "location": "src\\steps\\steps.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 611000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 29,
-            "name": "I get response code 200",
-            "match": {
-              "location": "src\\steps\\steps.js:54"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "issuer-routes;allows-you-to-validate-a-certificate-from-the-jwt.",
-        "keyword": "Scenario",
-        "line": 42,
-        "name": "Allows you to validate a certificate from the jwt.",
-        "tags": [
-          {
-            "name": "@didi-server",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 36,
-            "name": "A account {\"jwt\": \"2103\"}",
-            "match": {
-              "location": "src\\steps\\steps.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 37,
-            "name": "I send POST request to /issuer/verifyCertificate",
-            "match": {
-              "location": "src\\steps\\steps.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 602000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 38,
-            "name": "I get response code 200",
-            "match": {
-              "location": "src\\steps\\steps.js:54"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          }
-        ]
-      },
-      {
-        "id": "issuer-routes;verify-the-existence-of-the-issuer-according-to-the-did.",
-        "keyword": "Scenario",
-        "line": 51,
-        "name": "Verify the existence of the issuer according to the did.",
-        "tags": [
-          {
-            "name": "@didi-server",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 45,
-            "name": "A account {\"did\":\"didexample\"}",
-            "match": {
-              "location": "src\\steps\\steps.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 46,
-            "name": "I send POST request to /issuer/verify",
-            "match": {
-              "location": "src\\steps\\steps.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 596000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 47,
-            "name": "I get response code 200",
-            "match": {
-              "location": "src\\steps\\steps.js:54"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "issuer-routes;verify-the-existence-of-the-issuer-according-to-the-did.",
-        "keyword": "Scenario",
-        "line": 60,
-        "name": "Verify the existence of the issuer according to the did.",
-        "tags": [
-          {
-            "name": "@didi-server",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 54,
-            "name": "A account {\"did\":\"didexample\", \"name\": \"Gaston\"}",
-            "match": {
-              "location": "src\\steps\\steps.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 55,
-            "name": "I send POST request to /issuer/verify",
-            "match": {
-              "location": "src\\steps\\steps.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 610000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 56,
-            "name": "I get response code 200",
-            "match": {
-              "location": "src\\steps\\steps.js:54"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          }
-        ]
-      },
-      {
-        "id": "issuer-routes;revoke-authorization-of-an-issuer-to-issue-certificates.",
-        "keyword": "Scenario",
-        "line": 69,
-        "name": "Revoke authorization of an issuer to issue certificates.",
-        "tags": [
-          {
-            "name": "@didi-server",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 63,
-            "name": "A account {\"did\":\"didexample\", \"token\": \"Gaston\"}",
-            "match": {
-              "location": "src\\steps\\steps.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 64,
-            "name": "I send DELETE request to route /semillas/identityValidation",
-            "match": {
-              "location": "src\\steps\\steps.js:37"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 609000000,
-              "error_message": "Error: Request failed with status code 404\n    at createError (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 65,
-            "name": "I get response code 200",
-            "match": {
-              "location": "src\\steps\\steps.js:54"
-            },
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "description": "  In order manage directory\n  As a QA Automation\n  I want to make sure CRUD operations through REST API works fine",
-    "keyword": "Feature",
-    "name": "Mail Routes",
-    "line": 2,
-    "id": "mail-routes",
-    "tags": [
-      {
-        "name": "@didi-server",
-        "line": 1
-      }
-    ],
-    "uri": "src\\features\\MailRoutes.feature",
-    "elements": [
-      {
-        "id": "mail-routes;email-validation",
-        "keyword": "Scenario",
-        "line": 14,
-        "name": "Email validation",
-        "tags": [
-          {
-            "name": "@didi-server",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 8,
-            "name": "A account {\"eMail\":\"gaston.genaud@didi.org.ar\"}",
-            "match": {
-              "location": "src\\steps\\steps.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 9,
-            "name": "I send POST request to /sendMailValidator",
-            "match": {
-              "location": "src\\steps\\steps.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1546000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "I get response code 200 and status success",
-            "match": {
-              "location": "src\\steps\\steps.js:58"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "mail-routes;resend-email-validation",
-        "keyword": "Scenario",
-        "line": 23,
-        "name": "Resend email validation",
-        "tags": [
-          {
-            "name": "@didi-server",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 17,
-            "name": "A token {\"eMail\":\"gaston.genaud@didi.org.ar\"}",
-            "match": {
-              "location": "src\\steps\\steps.js:13"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 18,
-            "name": "I send POST request to /reSendMailValidator",
-            "match": {
-              "location": "src\\steps\\steps.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1055000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 19,
-            "name": "I get response code 200",
-            "match": {
-              "location": "src\\steps\\steps.js:54"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "mail-routes;verify-email-code",
-        "keyword": "Scenario",
-        "line": 33,
-        "name": "verify email Code",
-        "tags": [
-          {
-            "name": "@didi-server",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 27,
-            "name": "A account {\"eMail\":\"gaston.genaud@didi.org.ar\",\"validationCode\": \"1243\", \"did\":\"20\"}",
-            "match": {
-              "location": "src\\steps\\steps.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 28,
-            "name": "I send POST request to /verifyMailCode",
-            "match": {
-              "location": "src\\steps\\steps.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 609000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 29,
-            "name": "I get response code 200",
-            "match": {
-              "location": "src\\steps\\steps.js:54"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "description": "  In order manage directory\n  As a QA Automation\n  I want to make sure CRUD operations through REST API works fine",
-    "keyword": "Feature",
-    "name": "Presentation Routes",
-    "line": 2,
-    "id": "presentation-routes",
-    "tags": [
-      {
-        "name": "@didi-server",
-        "line": 1
-      }
-    ],
-    "uri": "src\\features\\PresentationRoutes.feature",
-    "elements": [
-      {
-        "id": "presentation-routes;get-a-presentation-given-an-id",
-        "keyword": "Scenario",
-        "line": 14,
-        "name": "Get a presentation given an id",
-        "tags": [
-          {
-            "name": "@didi-server",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 8,
-            "name": "A account",
-            "match": {
-              "location": "src\\steps\\steps.js:10"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 9,
-            "name": "I send GET request to /presentation/: 321321312",
-            "match": {
-              "location": "src\\steps\\steps.js:45"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 597000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "I get response code 200",
-            "match": {
-              "location": "src\\steps\\steps.js:54"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          }
-        ]
-      },
-      {
-        "id": "presentation-routes;save-a-presentation",
-        "keyword": "Scenario",
-        "line": 23,
-        "name": "Save a presentation",
-        "tags": [
-          {
-            "name": "@didi-server",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 17,
-            "name": "A token { \"jwts\": \"75f1832cbc\" }",
-            "match": {
-              "location": "src\\steps\\steps.js:13"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 18,
-            "name": "I send POST request to /presentation",
-            "match": {
-              "location": "src\\steps\\steps.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 599000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 19,
-            "name": "I get response code 200",
-            "match": {
-              "location": "src\\steps\\steps.js:54"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "description": "  In order manage directory\n  As a QA Automation\n  I want to make sure CRUD operations through REST API works fine",
-    "keyword": "Feature",
-    "name": "Renaper Routes",
-    "line": 2,
-    "id": "renaper-routes",
-    "tags": [
-      {
-        "name": "@didi-server",
-        "line": 1
-      }
-    ],
-    "uri": "src\\features\\RenaperRoutes.feature",
-    "elements": [
-      {
-        "id": "renaper-routes;allows-to-validate-the-identity-of-a-user-against-renaper",
-        "keyword": "Scenario",
-        "line": 15,
-        "name": "Allows to validate the identity of a user against renaper",
-        "tags": [
-          {
-            "name": "@didi-server",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 9,
-            "name": "A token { \"did\":\"did:ethr:0xd56d90753777b4ab2013ad06ed3ae775f1832cbc\", \"dni\":\"40852356\", \"gender\": \"male\", \"name\": \"Juan\", \"lastName\": \"Perez\", \"birthDate\": \"20/02/1995\", \"order\": \"509\", \"selfieImage\": \"\", \"frontImage\": \"frontImage\", \"backImage\": \"backImage\"}",
-            "match": {
-              "location": "src\\steps\\steps.js:13"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 10,
-            "name": "I send POST request to /renaper/validateDni",
-            "match": {
-              "location": "src\\steps\\steps.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 600000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 11,
-            "name": "I get response code 200",
-            "match": {
-              "location": "src\\steps\\steps.js:54"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "renaper-routes;returns-the-status-of-an-order-placed-in-\"/-validatedni\"",
-        "keyword": "Scenario",
-        "line": 25,
-        "name": "Returns the status of an order placed in \"/ validateDni\"",
-        "tags": [
-          {
-            "name": "@didi-server",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 19,
-            "name": "A account {\"did\":\"gaston.genaud@didi.org.ar\", \"operationId\":\"40762375\"}",
-            "match": {
-              "location": "src\\steps\\steps.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 20,
-            "name": "I send POST request to /renaper/validateDniState",
-            "match": {
-              "location": "src\\steps\\steps.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 601000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 21,
-            "name": "I get response code 200",
-            "match": {
-              "location": "src\\steps\\steps.js:54"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "description": "  In order manage directory\n  As a QA Automation\n  I want to make sure CRUD operations through REST API works fine",
-    "keyword": "Feature",
     "name": "Semillas Routes",
     "line": 2,
     "id": "semillas-routes",
@@ -1028,117 +14,9 @@
     "uri": "src\\features\\SemillasRoutes.feature",
     "elements": [
       {
-        "id": "semillas-routes;request-semillas-credentials",
-        "keyword": "Scenario",
-        "line": 19,
-        "name": "Request semillas credentials",
-        "tags": [
-          {
-            "name": "@didi-server",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 13,
-            "name": "A token { \"did\": \"did:ethr:0xd56d90753777b4ab2013ad06ed3ae775f1832cbc\", \"dni\": \"40762726\" }",
-            "match": {
-              "location": "src\\steps\\steps.js:13"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 14,
-            "name": "I send POST request to /semillas/notifyDniDid",
-            "match": {
-              "location": "src\\steps\\steps.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 954000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 15,
-            "name": "I get response code 200",
-            "match": {
-              "location": "src\\steps\\steps.js:54"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "semillas-routes;user-shares-their-credentials-to-the-provider-to-request-their-service",
-        "keyword": "Scenario",
-        "line": 29,
-        "name": "User shares their credentials to the provider to request their service",
-        "tags": [
-          {
-            "name": "@didi-server",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 23,
-            "name": "A account {\"did\":\"gaston.genaud@didi.org.ar\", \"email\": \"123456aaAA\", \"phone\": \"123456aaAA\", \"providerId\":\"20\", \"viewerJWT\":\"20\", \"customProviderEmail\":\"20\", \"dni\":\"40762375\"}",
-            "match": {
-              "location": "src\\steps\\steps.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 24,
-            "name": "I send POST request to /credentialShare",
-            "match": {
-              "location": "src\\steps\\steps.js:25"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 641000000,
-              "error_message": "Error: Request failed with status code 404\n    at createError (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 25,
-            "name": "I get response code 200",
-            "match": {
-              "location": "src\\steps\\steps.js:54"
-            },
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
         "id": "semillas-routes;semillas-identity-validation-request",
         "keyword": "Scenario",
-        "line": 38,
+        "line": 14,
         "name": "Semillas identity validation request",
         "tags": [
           {
@@ -1151,33 +29,87 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 32,
-            "name": "A account {\"did\":\"gaston.genaud@didi.org.ar\",\"dni\":\"40762375\", \"email\": \"123456aaAA\", \"phone\": \"123456aaAA\", \"name\":\"Juan\", \"lastName\":\"Perez\" }",
+            "line": 8,
+            "name": "A account {\"did\":\"did:ethr:0x184373f25dfe8596395282550853a9d5e1b11160\",\"dni\":\"40762375\", \"email\": \"gaston.genaud@didi.org.ar\", \"phone\": \"+542215559612\", \"name\":\"Juan\", \"lastName\":\"Perez\" }",
             "match": {
               "location": "src\\steps\\steps.js:6"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 33,
+            "line": 9,
             "name": "I send POST request to /semillas/validateDni",
             "match": {
               "location": "src\\steps\\steps.js:25"
             },
             "result": {
               "status": "passed",
-              "duration": 601000000
+              "duration": 1157000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 34,
+            "line": 10,
+            "name": "I get response code 200",
+            "match": {
+              "location": "src\\steps\\steps.js:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "semillas-routes;request-semillas-credentials",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Request semillas credentials",
+        "tags": [
+          {
+            "name": "@didi-server",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "A token { \"did\": \"did:ethr:0x184373f25dfe8596395282550853a9d5e1b11160\", \"dni\": \"40762375\" }",
+            "match": {
+              "location": "src\\steps\\steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I send POST request to /semillas/notifyDniDid",
+            "match": {
+              "location": "src\\steps\\steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1156000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
             "name": "I get response code 200",
             "match": {
               "location": "src\\steps\\steps.js:54"
@@ -1192,7 +124,7 @@
       {
         "id": "semillas-routes;update-the-status-of-the-identity-validation-request",
         "keyword": "Scenario",
-        "line": 47,
+        "line": 48,
         "name": "Update the status of the identity validation request",
         "tags": [
           {
@@ -1205,49 +137,49 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 41,
-            "name": "A account {\"did\":\"did\", \"state\": \"Cordoba\"}",
+            "line": 42,
+            "name": "A account {\"did\":\"did:ethr:0x184373f25dfe8596395282550853a9d5e1b11160\", \"state\": \"IN_PROGRESS\"}",
             "match": {
               "location": "src\\steps\\steps.js:6"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 42,
+            "line": 43,
             "name": "I send PATCH request to /semillas/identityValidation",
             "match": {
               "location": "src\\steps\\steps.js:33"
             },
             "result": {
-              "status": "failed",
-              "duration": 614000000,
-              "error_message": "Error: Request failed with status code 404\n    at createError (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
+              "status": "passed",
+              "duration": 619000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 43,
-            "name": "I get response code 200",
+            "line": 44,
+            "name": "I get response code 200 and status success",
             "match": {
-              "location": "src\\steps\\steps.js:54"
+              "location": "src\\steps\\steps.js:58"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 0
             }
           }
         ]
       },
       {
-        "id": "semillas-routes;remove-an-identity-validation-request-from-semillas",
+        "id": "semillas-routes;user-shares-their-credentials-to-the-provider-to-request-their-service",
         "keyword": "Scenario",
-        "line": 56,
-        "name": "Remove an identity validation request from Semillas",
+        "line": 38,
+        "name": "User shares their credentials to the provider to request their service",
         "tags": [
           {
             "name": "@didi-server",
@@ -1259,34 +191,34 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 50,
-            "name": "A account",
+            "line": 32,
+            "name": "A account {\"did\":\"did:ethr:0x184373f25dfe8596395282550853a9d5e1b11160\", \"email\": \"gaston.genaud@didi.org.ar\", \"phone\": \"+542215559612\", \"providerId\":\"20\", \"viewerJWT\":\"20\", \"customProviderEmail\":\"20\", \"dni\":\"40762375\"}",
             "match": {
-              "location": "src\\steps\\steps.js:10"
+              "location": "src\\steps\\steps.js:6"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 51,
-            "name": "I send DELETE request to /semillas/identityValidation/: didexample",
+            "line": 33,
+            "name": "I send POST request to /credentialShare",
             "match": {
-              "location": "src\\steps\\steps.js:37"
+              "location": "src\\steps\\steps.js:25"
             },
             "result": {
               "status": "failed",
-              "duration": 609000000,
+              "duration": 615000000,
               "error_message": "Error: Request failed with status code 404\n    at createError (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 52,
+            "line": 34,
             "name": "I get response code 200",
             "match": {
               "location": "src\\steps\\steps.js:54"
@@ -1300,7 +232,7 @@
       {
         "id": "semillas-routes;get-identity-validation-status-from-semillas",
         "keyword": "Scenario",
-        "line": 65,
+        "line": 58,
         "name": "Get identity validation status from Semillas",
         "tags": [
           {
@@ -1313,80 +245,64 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 59,
+            "line": 52,
             "name": "A account",
             "match": {
               "location": "src\\steps\\steps.js:10"
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 60,
-            "name": "I send GET request to /semillas/identityValidation/: did:ethr:0xd56d90753777b4ab2013ad06ed3ae775f1832cbc",
+            "line": 53,
+            "name": "I send GET request to /semillas/identityValidation/:did:ethr:0x184373f25dfe8596395282550853a9d5e1b11160",
             "match": {
               "location": "src\\steps\\steps.js:45"
             },
             "result": {
-              "status": "failed",
-              "duration": 641000000,
-              "error_message": "Error: Request failed with status code 500\n    at createError (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
+              "status": "passed",
+              "duration": 606000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
+            "line": 54,
+            "name": "I get response code 200",
+            "match": {
+              "location": "src\\steps\\steps.js:54"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "semillas-routes;remove-an-identity-validation-request-from-semillas",
+        "keyword": "Scenario",
+        "line": 67,
+        "name": "Remove an identity validation request from Semillas",
+        "tags": [
+          {
+            "name": "@didi-server",
+            "line": 1
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
             "line": 61,
-            "name": "I get response code 200",
+            "name": "A account",
             "match": {
-              "location": "src\\steps\\steps.js:54"
-            },
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "description": "  In order manage directory\n  As a QA Automation\n  I want to make sure CRUD operations through REST API works fine",
-    "keyword": "Feature",
-    "name": "ShareRequest Routes",
-    "line": 2,
-    "id": "sharerequest-routes",
-    "tags": [
-      {
-        "name": "@didi-server",
-        "line": 1
-      }
-    ],
-    "uri": "src\\features\\ShareRequestRoutes.feature",
-    "elements": [
-      {
-        "id": "sharerequest-routes;get-a-sharerequest-based-on-id",
-        "keyword": "Scenario",
-        "line": 14,
-        "name": "Get a ShareRequest based on id",
-        "tags": [
-          {
-            "name": "@didi-server",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 8,
-            "name": "A account {\"eMail\":\"gaston.genaud@didi.org.ar\",\"name\":\"Gaston\",\"lastname\":\"Genaud\",\"password\":\"123456AAA\", \"phoneNumber\": \"+5493513261149\", \"did\":\"did:ethr:0xd56d90753777b4ab2013ad06ed3ae775f1832cbc\",\"privateKeySeed\": \"604ef38219af8b00150ccd95\", \"firebaseId\":\"604ef38219af8b00150ccd95\"}",
-            "match": {
-              "location": "src\\steps\\steps.js:6"
+              "location": "src\\steps\\steps.js:10"
             },
             "result": {
               "status": "passed",
@@ -1396,198 +312,20 @@
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 9,
-            "name": "I send POST request to /shareRequest:222",
+            "line": 62,
+            "name": "I send DELETE request to /semillas/identityValidation",
             "match": {
-              "location": "src\\steps\\steps.js:25"
+              "location": "src\\steps\\steps.js:41"
             },
             "result": {
-              "status": "failed",
-              "duration": 608000000,
-              "error_message": "Error: Request failed with status code 404\n    at createError (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
+              "status": "passed",
+              "duration": 609000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 10,
-            "name": "I get response code 200",
-            "match": {
-              "location": "src\\steps\\steps.js:54"
-            },
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "description": "  In order manage directory\n  As a QA Automation\n  I want to make sure CRUD operations through REST API works fine",
-    "keyword": "Feature",
-    "name": "SMS Routes",
-    "line": 2,
-    "id": "sms-routes",
-    "tags": [
-      {
-        "name": "@didi-server",
-        "line": 1
-      }
-    ],
-    "uri": "src\\features\\SmsRoutes.feature",
-    "elements": [
-      {
-        "id": "sms-routes;validate-cell-phone",
-        "keyword": "Scenario",
-        "line": 14,
-        "name": "validate cell phone",
-        "tags": [
-          {
-            "name": "@didi-server",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 8,
-            "name": "A account {\"cellphoneNumber\": \"+5493513261149\"}",
-            "match": {
-              "location": "src\\steps\\steps.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 9,
-            "name": "I send POST request to /sendSmsValidator",
-            "match": {
-              "location": "src\\steps\\steps.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 604000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "I get response code 200",
-            "match": {
-              "location": "src\\steps\\steps.js:54"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "sms-routes;validate-sms-code-of-six-digits",
-        "keyword": "Scenario",
-        "line": 23,
-        "name": "validate sms code of six digits",
-        "tags": [
-          {
-            "name": "@didi-server",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 17,
-            "name": "A token {\"validationCode\": \"123456\",\"did\": \"sd\",\"cellphoneNumber\": \"sd\"}",
-            "match": {
-              "location": "src\\steps\\steps.js:13"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 18,
-            "name": "I send POST request to /verifySmsCode",
-            "match": {
-              "location": "src\\steps\\steps.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 599000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 19,
-            "name": "I get response code 200",
-            "match": {
-              "location": "src\\steps\\steps.js:54"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "sms-routes;send-mail-validator",
-        "keyword": "Scenario",
-        "line": 33,
-        "name": "send Mail Validator",
-        "tags": [
-          {
-            "name": "@didi-server",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 27,
-            "name": "A account {\"eMail\":\"gaston.genaud@didi.org.ar\"}",
-            "match": {
-              "location": "src\\steps\\steps.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 28,
-            "name": "I send POST request to /sendMailValidator",
-            "match": {
-              "location": "src\\steps\\steps.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1418000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 29,
+            "line": 63,
             "name": "I get response code 200",
             "match": {
               "location": "src\\steps\\steps.js:54"
@@ -1595,426 +333,6 @@
             "result": {
               "status": "passed",
               "duration": 0
-            }
-          }
-        ]
-      },
-      {
-        "id": "sms-routes;verify-mail-code",
-        "keyword": "Scenario",
-        "line": 42,
-        "name": "verify mail code",
-        "tags": [
-          {
-            "name": "@didi-server",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 36,
-            "name": "A account {\"validationCode\": \"123456\",\"did\": \"sd\",\"eMail\": \"sd\"}",
-            "match": {
-              "location": "src\\steps\\steps.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 37,
-            "name": "I send POST request to /verifyMailCode",
-            "match": {
-              "location": "src\\steps\\steps.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 594000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 38,
-            "name": "I get response code 200",
-            "match": {
-              "location": "src\\steps\\steps.js:54"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "description": "  In order manage directory\n  As a QA Automation\n  I want to make sure CRUD operations through REST API works fine",
-    "keyword": "Feature",
-    "name": "User Routes",
-    "line": 2,
-    "id": "user-routes",
-    "tags": [
-      {
-        "name": "@didi-server",
-        "line": 1
-      }
-    ],
-    "uri": "src\\features\\UserRoutes.feature",
-    "elements": [
-      {
-        "id": "user-routes;create-a-user-errorcode:-mail_not_validated",
-        "keyword": "Scenario",
-        "line": 15,
-        "name": "create a user errorCode: MAIL_NOT_VALIDATED",
-        "tags": [
-          {
-            "name": "@didi-server",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 8,
-            "name": "A account {\"eMail\":\"gaston.genaud@didi.org.ar\",\"name\":\"Gaston\",\"lastname\":\"Genaud\",\"password\":\"Hola123.\", \"phoneNumber\": \"+5493513261149\", \"did\":\"did:ethr:0xd56d90753777b4ab2013ad06ed3ae775f1832cbc\",\"privateKeySeed\": \"604ef38219af8b00150ccd95\", \"firebaseId\":\"604ef38219af8b00150ccd95\"}",
-            "match": {
-              "location": "src\\steps\\steps.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 9,
-            "name": "I send POST request to /registerUser",
-            "match": {
-              "location": "src\\steps\\steps.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 866000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 10,
-            "name": "I get response code 200 and status error",
-            "match": {
-              "location": "src\\steps\\steps.js:58"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 11,
-            "name": "I get errorCode \"MAIL_NOT_VALIDATED\"",
-            "match": {
-              "location": "src\\steps\\steps.js:63"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "user-routes;create-a-user-errorcode:-password_not_safe",
-        "keyword": "Scenario",
-        "line": 25,
-        "name": "create a user errorCode: PASSWORD_NOT_SAFE",
-        "tags": [
-          {
-            "name": "@didi-server",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 18,
-            "name": "A account {\"eMail\":\"gaston.genaud@didi.org.ar\",\"name\":\"Gaston\",\"lastname\":\"Genaud\",\"password\":\"123456AAA\", \"phoneNumber\": \"+5493513261149\", \"did\":\"did:ethr:0xd56d90753777b4ab2013ad06ed3ae775f1832cbc\",\"privateKeySeed\": \"604ef38219af8b00150ccd95\", \"firebaseId\":\"604ef38219af8b00150ccd95\"}",
-            "match": {
-              "location": "src\\steps\\steps.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 19,
-            "name": "I send POST request to /registerUser",
-            "match": {
-              "location": "src\\steps\\steps.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 608000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 20,
-            "name": "I get response code 200 and status error",
-            "match": {
-              "location": "src\\steps\\steps.js:58"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 21,
-            "name": "I get errorCode \"PASSWORD_NOT_SAFE\"",
-            "match": {
-              "location": "src\\steps\\steps.js:63"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "user-routes;renew-a-user-the-firebase-token",
-        "keyword": "Scenario",
-        "line": 34,
-        "name": "renew a user the firebase token",
-        "tags": [
-          {
-            "name": "@didi-server",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 28,
-            "name": "A token {\"token\": \"sd\"}",
-            "match": {
-              "location": "src\\steps\\steps.js:13"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 29,
-            "name": "I send POST request to /renewFirebaseToken",
-            "match": {
-              "location": "src\\steps\\steps.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 607000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 30,
-            "name": "I get response code 200",
-            "match": {
-              "location": "src\\steps\\steps.js:54"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          }
-        ]
-      },
-      {
-        "id": "user-routes;recover-a-user-password",
-        "keyword": "Scenario",
-        "line": 44,
-        "name": "recover a user password",
-        "tags": [
-          {
-            "name": "@didi-server",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 38,
-            "name": "A account {\"eMail\":\"gaston.genaud@didi.org.ar\",\"password\": \"123456aaAA\", \"firebaseId\":\"20\"}",
-            "match": {
-              "location": "src\\steps\\steps.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 39,
-            "name": "I send POST request to /recoverAccount",
-            "match": {
-              "location": "src\\steps\\steps.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 659000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 40,
-            "name": "I get response code 200",
-            "match": {
-              "location": "src\\steps\\steps.js:54"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          }
-        ]
-      },
-      {
-        "id": "user-routes;user-login",
-        "keyword": "Scenario",
-        "line": 53,
-        "name": "user login",
-        "tags": [
-          {
-            "name": "@didi-server",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 47,
-            "name": "A account {\"did\": \"2103\", \"eMail\":\"gaston.genaud@didi.org.ar\",\"password\": \"123456aaAA\", \"firebaseId\":\"20\"}",
-            "match": {
-              "location": "src\\steps\\steps.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 48,
-            "name": "I send POST request to /userLogin",
-            "match": {
-              "location": "src\\steps\\steps.js:25"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 599000000,
-              "error_message": "Error: Request failed with status code 429\n    at createError (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (C:\\Users\\Coderian\\Desktop\\DIDI\\librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 49,
-            "name": "I get response code 200",
-            "match": {
-              "location": "src\\steps\\steps.js:54"
-            },
-            "result": {
-              "status": "skipped"
-            }
-          }
-        ]
-      },
-      {
-        "id": "user-routes;recover-password",
-        "keyword": "Scenario",
-        "line": 62,
-        "name": "recover password",
-        "tags": [
-          {
-            "name": "@didi-server",
-            "line": 1
-          }
-        ],
-        "type": "scenario",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 56,
-            "name": "A account {\"eMail\":\"gaston.genaud@didi.org.ar\",\"eMailValidationCode\": \"123456aaAA\", \"newPass\":\"212312Aa0\"}",
-            "match": {
-              "location": "src\\steps\\steps.js:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 57,
-            "name": "I send POST request to /recoverPassword",
-            "match": {
-              "location": "src\\steps\\steps.js:25"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 597000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 58,
-            "name": "I get response code 200",
-            "match": {
-              "location": "src\\steps\\steps.js:54"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1000000
             }
           }
         ]

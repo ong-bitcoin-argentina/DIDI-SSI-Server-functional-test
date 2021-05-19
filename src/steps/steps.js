@@ -31,15 +31,15 @@ When('I send POST request to {} {}', async function (path, id) {
 });
 
 When('I send PATCH request to {}', async function (path) {
-    this.context['response'] = await restHelper.postData(`${process.env.SERVICE_URL}${path}`, this.context['request']);
+    this.context['response'] = await restHelper.patchData(`${process.env.SERVICE_URL}${path}`, this.context['request']);
 });
 
 When('I send DELETE request to {} {}', async function (path,param) {
-    this.context['response'] = await restHelper.postData(`${process.env.SERVICE_URL}${path + param}`);
+    this.context['response'] = await restHelper.deleteData(`${process.env.SERVICE_URL}${path + param}`);
 });
 
-When('I send DELETE request to route {string}', async function (path) {
-    this.context['response'] = await restHelper.postData(`${process.env.SERVICE_URL}${path}`);
+When('I send DELETE request to {}', async function (path) {
+    this.context['response'] = await restHelper.deleteData(`${process.env.SERVICE_URL}${path}`);
 });
 
 When('I send GET request to {}', async function (path) {
