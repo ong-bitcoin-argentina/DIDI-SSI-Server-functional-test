@@ -7,11 +7,11 @@ Feature: Mail Routes
   Scenario Outline: Email validation
     Given A account <request>
     When I send POST request to /sendMailValidator
-    Then I get response code 200
+    Then I get response code 200 and status success
 
     Examples:
       | request                                                                                                                                    |
-      | {"eMail":"gaston.genaud@didi.org.ar","did":"did:ethr:0xd56d90753777b4ab2013ad06ed3ae775f1832cbc", "password":"123456AAA", "unique": false} |
+      | {"eMail":"gaston.genaud@didi.org.ar"} |
 
   Scenario Outline: Resend email validation
     Given A token <request>

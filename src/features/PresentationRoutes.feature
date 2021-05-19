@@ -6,12 +6,12 @@ Feature: Presentation Routes
 
   Scenario Outline: Get a presentation given an id
     Given A account
-    When I send GET request to /presentation: <id>
+    When I send GET request to /presentation/: <id>
     Then I get response code 200
 
     Examples:
-      | id        |
-      | 321321312 |
+      | id      |
+      |321321312|
 
   Scenario Outline: Save a presentation
     Given A token <request>

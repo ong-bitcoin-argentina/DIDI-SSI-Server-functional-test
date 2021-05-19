@@ -59,14 +59,6 @@ Feature: Issuer Routes
       | request                                |
       | {"did":"didexample", "name": "Gaston"} |
 
-  Scenario Outline: Revoke authorization of an issuer to issue certificates.
-    Given A account <request>
-    When I send DELETE request to route /semillas/identityValidation
-    Then I get response code 200
-
-    Examples:
-      | request                                    |
-      |  {"did":"didexample", "token": "Gaston"}   |
     
 #Endpoints pendientes
 # *   /issuer/:{did}/refresh:
