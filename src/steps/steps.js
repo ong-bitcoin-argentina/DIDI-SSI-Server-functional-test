@@ -2,6 +2,7 @@ const {Given, When, Then, AfterAll, After, And} = require('cucumber');
 const assert = require('assert').strict
 const restHelper = require('../util/restHelper');
 const {makeid} = require('../util/util');
+
 Given('A account {}', function (request) {
     this.context['request'] = JSON.parse(request);
 });
@@ -19,8 +20,7 @@ Given('A did and random name request', function () {
     randomName = makeid(5);
     const request =  "{ " + "\"did\": \"" + did + "\", \"name\": \"" + randomName + "\"} ";
     this.context['request'] = JSON.parse(request);
-})
-
+});
 
 When('I send POST request to {}', async function (path) {
     this.context['response'] = await restHelper.postData(`${process.env.SERVICE_URL}${path}`, this.context['request']);
@@ -44,11 +44,11 @@ When('I send DELETE request to route {string}', async function (path) {
 
 When('I send GET request to {}', async function (path) {
     this.context['response'] = await restHelper.getData(`${process.env.SERVICE_URL}${path}`);
-    console.log(this.context['response']);
 });
 
-When('I send GET request to {} {string}', async function (path, id) {
+When('I send GET request to {}{string}', async function (path, id) {
     this.context['response'] = await restHelper.getData(`${process.env.SERVICE_URL}${path+id}`);
+
 });
 
 Then('I get response code {int}', async function (code) {
