@@ -35,7 +35,7 @@ const patchData = async (url, data) => {
 
 const deleteData = async (url, data) => {
     try {
-        return await axios.delete(url);
+        return await axios.delete(url, { data: data});
     } catch (e) {
         console.error('exception occurred while DELETE', e);
         throw e;
