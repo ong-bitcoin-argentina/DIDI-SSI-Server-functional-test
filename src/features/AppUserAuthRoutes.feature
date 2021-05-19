@@ -19,15 +19,15 @@ Feature: AppUserAuth Routes
 #    Then I get response code 500 and status success
 #
 #
-#  Scenario Outline: Create and validate the relationship user - authorized app
-#    Given A account <request>
-#    When I send POST request to /userApp/validateUser
-#    Then I get response code 500
-#
-#    Examples:
-#      | request                 |
-#      | {"userJWT": "40762375"} |
-#
+  Scenario Outline: Create and validate the relationship user - authorized app
+    Given A account <request>
+    When I send POST request to /userApp/validateUser
+    Then I get response code 200
+
+    Examples:
+      | request                                 |
+      | {"userJWT": "6089adad4b01290015469562"} |
+
   Scenario Outline: Gets a user according to his did, whose relationship [user - authorized app] was established
     Given A account
     When I send GET request to /userApp/:did:ethr:0x184373f25dfe8596395282550853a9d5e1b11159
