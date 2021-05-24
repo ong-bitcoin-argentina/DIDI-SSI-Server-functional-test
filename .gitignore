@@ -37,6 +37,7 @@ coverage
 
 #REPORTS
 cucumber.json
+*.json
 /test/report
 
 #ENVIROMENT

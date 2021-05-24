@@ -15,9 +15,17 @@ const getData = (url) => {
     }
 }
 
-const postData = (url, data) => {
+const postData = (url, data, token) => {
     try {
-        return axios.post(url, data);
+        if (token!=null) {
+            return axios.post(url, data, { headers : {
+                Authorization : token
+            }});
+        }
+        else {
+            return axios.post(url, data);
+        }
+        
     } catch (e) {
         console.error('exception occurred while POST', e);
         throw e;

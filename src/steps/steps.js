@@ -26,7 +26,7 @@ When('I send POST request to {}', async function (path) {
     this.context['response'] = await restHelper.postData(`${process.env.SERVICE_URL}${path}`, this.context['request']);
 });
 
-When('I send POST request to {} {}', async function (path, id) {
+When('I send POST request to {} {string}', async function (path, id) {
     this.context['response'] = await restHelper.postData(`${process.env.SERVICE_URL}${path + id}`, this.context['request']);
 });
 
