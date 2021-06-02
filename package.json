@@ -1,10 +1,10 @@
 {
-  "name": "DIDI-SSI-Server-functional-test",
+  "name": "didi-ssi-server-functional-test",
   "version": "1.1.0",
   "description": "Automation Library for DIDI SSI SERVER AT Bitcoin Argentina",
   "main": "index.js",
   "scripts": {
-    "test": "npx cucumber-js -f json:cucumber.json src/features/*.feature -r src/steps/*.js  && node ./report.js",
+    "test": "npx cucumber-js -f json:cucumber.json 'src/features/*.feature' -r 'src/steps/*.js'  && node ./report.js",
     "didi-server": "./node_modules/.bin/cucumber-js -f json:cucumber.json src/features/ -r src/steps/ --tags '@didi-server'",
     "report": "node ./report.js",
     "didi-server-bdd": "(yarn didi-server && yarn report) || yarn report"
