@@ -36,7 +36,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -49,7 +49,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 879000000,
+              "duration": 841000000,
               "error_message": "Error: Request failed with status code 400\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
@@ -103,7 +103,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 602000000,
+              "duration": 604000000,
               "error_message": "Error: Request failed with status code 400\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
@@ -173,8 +173,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 5005000000,
-              "error_message": "Error: function timed out, ensure the promise resolves within 5000 milliseconds\n    at Timeout._onTimeout (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\cucumber\\lib\\user_code_runner.js:76:18)\n    at listOnTimeout (internal/timers.js:554:17)\n    at processTimers (internal/timers.js:497:7)"
+              "duration": 650000000,
+              "error_message": "Error: Request failed with status code 502\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
           {
@@ -230,7 +230,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -243,7 +243,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 607000000
+              "duration": 620000000
             }
           },
           {
@@ -256,7 +256,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ]
@@ -284,7 +284,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -297,7 +297,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 598000000
+              "duration": 620000000
             }
           },
           {
@@ -310,7 +310,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ]
@@ -351,7 +351,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 599000000
+              "duration": 628000000
             }
           },
           {
@@ -405,7 +405,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 594000000
+              "duration": 618000000
             }
           },
           {
@@ -459,7 +459,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 599000000
+              "duration": 604000000
             }
           },
           {
@@ -472,7 +472,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ]
@@ -513,7 +513,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 617000000
+              "duration": 607000000
             }
           },
           {
@@ -526,7 +526,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ]
@@ -583,7 +583,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1179000000
+              "duration": 1555000000
             }
           },
           {
@@ -596,7 +596,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ]
@@ -637,7 +637,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 929000000
+              "duration": 1935000000
             }
           },
           {
@@ -650,7 +650,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ]
@@ -678,7 +678,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -691,7 +691,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 591000000
+              "duration": 603000000
             }
           },
           {
@@ -761,7 +761,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 607000000
+              "duration": 611000000
             }
           },
           {
@@ -774,7 +774,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ]
@@ -802,7 +802,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -815,7 +815,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 602000000
+              "duration": 622000000
             }
           },
           {
@@ -828,7 +828,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ]
@@ -872,7 +872,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -885,7 +885,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 600000000
+              "duration": 611000000
             }
           },
           {
@@ -939,7 +939,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 600000000
+              "duration": 617000000
             }
           },
           {
@@ -996,7 +996,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -1009,7 +1009,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1069000000
+              "duration": 2526000000
             }
           },
           {
@@ -1022,7 +1022,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ]
@@ -1063,7 +1063,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 884000000
+              "duration": 1495000000
             }
           },
           {
@@ -1117,7 +1117,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 604000000
+              "duration": 623000000
             }
           },
           {
@@ -1170,8 +1170,9 @@
               "location": "src\\steps\\steps.js:45"
             },
             "result": {
-              "status": "passed",
-              "duration": 640000000
+              "status": "failed",
+              "duration": 626000000,
+              "error_message": "Error: Request failed with status code 500\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
           {
@@ -1183,8 +1184,7 @@
               "location": "src\\steps\\steps.js:58"
             },
             "result": {
-              "status": "passed",
-              "duration": 0
+              "status": "skipped"
             }
           }
         ]
@@ -1225,7 +1225,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 599000000,
+              "duration": 596000000,
               "error_message": "Error: Request failed with status code 404\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
@@ -1279,7 +1279,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 600000000
+              "duration": 603000000
             }
           },
           {
@@ -1349,7 +1349,7 @@
             },
             "result": {
               "status": "failed",
-              "duration": 604000000,
+              "duration": 592000000,
               "error_message": "Error: Request failed with status code 404\n    at createError (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (E:\\DIDI\\Librerias\\SERVER\\DIDI-SSI-Server-functional-test\\node_modules\\axios\\lib\\adapters\\http.js:260:11)\n    at IncomingMessage.emit (events.js:327:22)\n    at endReadableNT (internal/streams/readable.js:1327:12)\n    at processTicksAndRejections (internal/process/task_queues.js:80:21)"
             }
           },
@@ -1419,7 +1419,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 597000000
+              "duration": 607000000
             }
           },
           {
@@ -1473,7 +1473,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 599000000
+              "duration": 1214000000
             }
           },
           {
@@ -1527,7 +1527,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 975000000
+              "duration": 1419000000
             }
           },
           {
@@ -1568,7 +1568,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -1581,7 +1581,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 587000000
+              "duration": 607000000
             }
           },
           {
@@ -1651,7 +1651,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 886000000
+              "duration": 1129000000
             }
           },
           {
@@ -1718,7 +1718,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 599000000
+              "duration": 611000000
             }
           },
           {
@@ -1731,7 +1731,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -1744,7 +1744,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ]
@@ -1785,7 +1785,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 594000000
+              "duration": 606000000
             }
           },
           {
@@ -1839,7 +1839,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 674000000
+              "duration": 720000000
             }
           },
           {
@@ -1880,7 +1880,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -1893,7 +1893,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 667000000
+              "duration": 704000000
             }
           },
           {
@@ -1934,7 +1934,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           },
           {
@@ -1947,7 +1947,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 598000000
+              "duration": 1619000000
             }
           },
           {
@@ -1960,7 +1960,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ]
