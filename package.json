@@ -1,5 +1,5 @@
 {
-  "name": "didi-ssi-server-functional-test",
+  "name": "@proyecto-didi/didi-ssi-server-functional-test",
   "version": "1.1.0",
   "description": "Automation Library for DIDI SSI SERVER AT Bitcoin Argentina",
   "main": "index.js",
@@ -10,7 +10,7 @@
     "didi-server-bdd": "(yarn didi-server && yarn report) || yarn report"
   },
   "author": "Gaston Genaud",
-  "license": "ISC",
+  "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
     "axios": "^0.21.1",
     "dotenv-flow": "^3.2.0",
