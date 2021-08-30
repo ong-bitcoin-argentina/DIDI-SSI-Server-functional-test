@@ -59,6 +59,10 @@ Feature: Issuer Routes
       | request                                |
       | {"did":"didexample", "name": "Gaston"} |
 
+  Scenario Outline: Authorize an Issuer to emit with DIDI
+    Given A did and random name request
+    When I send POST request to /issuer
+    Then I get response code 200 and status success
     
 #Endpoints pendientes
 # *   /issuer/:{did}/refresh:
