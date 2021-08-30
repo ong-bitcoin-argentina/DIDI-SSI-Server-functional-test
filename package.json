@@ -1,6 +1,6 @@
 {
   "name": "@proyecto-didi/didi-ssi-server-functional-test",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "Automation Library for DIDI SSI SERVER AT Bitcoin Argentina",
   "main": "index.js",
   "scripts": {
