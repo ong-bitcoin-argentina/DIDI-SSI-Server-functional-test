@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npx cucumber-js -f json:cucumber.json 'src/features/*.feature' -r 'src/steps/*.js'  && node ./report.js",
+    "test:windows": "npx cucumber-js -f json:cucumber.json src/features/*.feature -r src/steps/*.js  && node ./report.js",
     "didi-server": "./node_modules/.bin/cucumber-js -f json:cucumber.json src/features/ -r src/steps/ --tags '@didi-server'",
     "report": "node ./report.js",
     "didi-server-bdd": "(yarn didi-server && yarn report) || yarn report"
